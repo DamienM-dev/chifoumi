@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/roboto/thin/Roboto-Thin.ttf") format("truetype");
+}
+
+p,
+h1,
+h2,
+h3 {
+  font-family: "Roboto", sans-serif;
+}
+
+.rotate {
+  transform: rotate(180deg);
+  width: 105px;
+  height: 188px;
+}
