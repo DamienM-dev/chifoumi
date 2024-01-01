@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const userChoices = [
   {
@@ -27,14 +28,16 @@ export default function OptionChoice() {
       {userChoices.map((choice, index) => (
         <div
           key={index}
-          className="mt-11 bg-purple rounded-full w-16 h-16 flex justify-center relative"
+          className="mt-11 bg-purple rounded-full w-16 h-16 flex justify-center cursor-pointer relative"
           onClick={() => handleUserChoice(index)}
         >
-          <img
-            src={choice.src}
-            alt={choice.alt}
-            className=" w-16 h-24 absolute -top-10 left-1 flex"
-          />
+          <Link to="/result">
+            <img
+              src={choice.src}
+              alt={choice.alt}
+              className=" w-16 h-24 absolute -top-10 left-1 flex"
+            />
+          </Link>
         </div>
       ))}
     </div>
