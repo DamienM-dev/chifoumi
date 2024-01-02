@@ -551,9 +551,17 @@ video {
   left: 0.25rem;
 }
 
+.m-auto {
+  margin: auto;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.mb-16 {
+  margin-bottom: 4rem;
 }
 
 .mt-10 {
@@ -572,8 +580,24 @@ video {
   margin-top: 1rem;
 }
 
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
+.mr-3 {
+  margin-right: 0.75rem;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
 .flex {
   display: flex;
+}
+
+.h-11 {
+  height: 2.75rem;
 }
 
 .h-12 {
@@ -586,6 +610,10 @@ video {
 
 .h-24 {
   height: 6rem;
+}
+
+.h-36 {
+  height: 9rem;
 }
 
 .h-4 {
@@ -608,12 +636,20 @@ video {
   width: 4rem;
 }
 
+.w-28 {
+  width: 7rem;
+}
+
 .w-36 {
   width: 9rem;
 }
 
 .w-4 {
   width: 1rem;
+}
+
+.w-44 {
+  width: 11rem;
 }
 
 .w-64 {
@@ -624,8 +660,21 @@ video {
   width: 100%;
 }
 
+.max-w-xl {
+  max-width: 36rem;
+}
+
+.rotate-180 {
+  --tw-rotate: 180deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .cursor-pointer {
   cursor: pointer;
+}
+
+.items-center {
+  align-items: center;
 }
 
 .justify-center {
@@ -700,8 +749,17 @@ video {
   line-height: 1.25rem;
 }
 
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .font-black {
   font-weight: 900;
+}
+
+.font-bold {
+  font-weight: 700;
 }
 
 .uppercase {

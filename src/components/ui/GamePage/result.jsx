@@ -17,13 +17,17 @@ const userChoices = [
 ];
 
 export default function Result() {
-  const { choiceIndex } = useParams();
-  const userChoice = userChoices[choiceIndex];
+  const { choiceAlt } = useParams();
+  const userChoice = userChoices.find((choice) => choice.alt === choiceAlt);
   return (
     <div>
       {userChoice ? (
-        <div>
-          <img src={userChoice.src} alt={userChoice.alt} />
+        <div className="flex justify-center">
+          <img
+            src={userChoice.src}
+            alt={userChoice.alt}
+            className="w-28 h-36 "
+          />
         </div>
       ) : null}
     </div>

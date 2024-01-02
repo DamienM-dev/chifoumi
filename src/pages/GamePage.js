@@ -8,7 +8,7 @@ import OptionChoice from "../components/ui/GamePage/optionChoice";
 
 export default function GamePage() {
   return (
-    <main>
+    <main className="max-w-xl m-auto">
       <ReturnHome />
       <RpsFast />
       <LetsPlay />

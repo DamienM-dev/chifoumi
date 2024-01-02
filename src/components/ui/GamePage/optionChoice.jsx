@@ -31,7 +31,7 @@ export default function OptionChoice() {
           className="mt-11 bg-purple rounded-full w-16 h-16 flex justify-center cursor-pointer relative"
           onClick={() => handleUserChoice(index)}
         >
-          <Link to={`/result/${index}`}>
+          <Link to={`/result/${choice.alt}`}>
             <img
               src={choice.src}
               alt={choice.alt}

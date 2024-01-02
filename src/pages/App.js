@@ -7,7 +7,7 @@ import Start from "../components/ui/HomePage/start.jsx";
 
 function App() {
   return (
-    <main className="bg-purple h-screen">
+    <main className="bg-purple h-screen max-w-xl m-auto">
       <Creator />
       <RpsTitle />
       <RpsImages />

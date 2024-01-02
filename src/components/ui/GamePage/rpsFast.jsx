@@ -47,7 +47,7 @@ export default function RpsFast() {
       setIndexImages((prevIndex) =>
         prevIndex === fastHand.length - 1 ? 0 : prevIndex + 1
       );
-    }, 30000000);
+    }, 30);
     return () => clearInterval(intervalId);
   }, []);
 
