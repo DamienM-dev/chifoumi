@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 
 const userChoices = [
   {
-    src: "imagesHand/paper.svg",
+    src: "imagesHand/rock.svg",
     alt: "pierre",
   },
   {
-    src: "imagesHand/rock.svg",
+    src: "imagesHand/paper.svg",
     alt: "papier",
   },
   {
@@ -31,7 +31,7 @@ export default function OptionChoice() {
           className="mt-11 bg-purple rounded-full w-16 h-16 flex justify-center cursor-pointer relative"
           onClick={() => handleUserChoice(index)}
         >
-          <Link to="/result">
+          <Link to={`/result/${index}`}>
             <img
               src={choice.src}
               alt={choice.alt}

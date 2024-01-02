@@ -14,7 +14,7 @@ export const router = createBrowserRouter([
     element: <GamePage />,
   },
   {
-    path: "result",
+    path: "result/:choiceIndex",
     element: <ResultPage />,
   },
 ]);
